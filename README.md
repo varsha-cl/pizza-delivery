@@ -1,1 +1,1 @@
-McKinsey's very own pizza joint!
+Interns's very own pizza joint!
