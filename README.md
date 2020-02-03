@@ -1,1 +1,1 @@
-Interns's very own pizza joint!
+Interns pizza joint!
