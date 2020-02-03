@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+    function submitForm() {
+        var frm = document.getElementsById('btnsubmit');
+        frm.submit(); // Submit the form
+        frm.reset();  // Reset all form data
+        return false; // Prevent page refresh
+     }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Submit" onclick="submitForm()">
+</body>
+
+</html>
