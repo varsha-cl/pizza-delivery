@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 
-<head> INTERN'S PIZZA JOINT</head>
+<head> INTERN'S PIZZA JOINT
+    <style>
+
+    </style>
+</head>
 <title>
     intern's-pizza-joint
 </title>
+<script>
+    function submitForm() {
+        let frm = document.getElementsById('btnsubmit');
+        frm.submit(); // Submit the form
+        frm.reset();  // Reset all form data
+        return false; // Prevent page refresh
+    }
+</script>
 
 <body>
-    <form name="pizza">
+  <div id="btnsubmit">
+    <form name="internPizza">
         <h3>Please select your crust</h3>
         <input type="radio" name="Crust" value="New Hand Tossed"> New Hand Tossed<br>
         <input type="radio" name="Crust" value="Wheat Thin Crust"> Wheat Thin Crust<br>
@@ -35,7 +48,27 @@
         <input type="checkbox" name ="non-veg-pizza-topping" value="Peri-Peri Chicken">Peri-Peri Chicken<br>
         <input type="checkbox" name ="non-veg-pizza-topping" value="Chicken Sausage">Chicken Sausage<br>
         <input type="checkbox" name ="non-veg-pizza-topping" value="Barbecue Chicken">Barbecue Chicken<br>
+       <br/>
+      <fieldset>
+                <legend>PERSONAL DETAILS: </legend>
+
+                <label> NAME:</label><br />
+                <input type="text" name="username"></input><br />
+                <label> PHONE NUMBER:</label><br />
+                <input type="tel" name="userPhone"></input><br />
+                <label> EMAIL:</label><br />
+                <input type="email" name="emailaddress"></input><br />
+                <label> ADDRESS:</label><br />
+                <textarea name="adress"></textarea><br />
+                <label>CHOOSE PICK-UP TIME:</label><br />
+                <input type="date" name="pick-up-time">
+                <br />
+                <input type="submit" name="SUBMIT" value="SUBMIT" onclick="submitForm()"></input>
+
+            </fieldset>
     </form>
+      </div>
+
 </body>
 
 </html>
