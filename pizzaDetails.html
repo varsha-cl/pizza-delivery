@@ -8,6 +8,14 @@
 <title>
     intern's-pizza-joint
 </title>
+<script>
+    function submitForm() {
+        let frm = document.getElementsById('btnsubmit');
+        frm.submit(); // Submit the form
+        frm.reset();  // Reset all form data
+        return false; // Prevent page refresh
+    }
+</script>
 
 <body>
 
@@ -27,7 +35,7 @@
                 <label>CHOOSE PICK-UP TIME:</label><br />
                 <input type="date" name="pick-up-time">
                 <br />
-                <input type="submit" name="SUBMIT" value="SUBMIT"></input>
+                <input type="submit" name="SUBMIT" value="SUBMIT" onclick="submitForm()"></input>
 
             </fieldset>
 
